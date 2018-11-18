@@ -1,0 +1,5 @@
+# Install docker on ubuntu (Nectar instance)
+See:https://docs.docker.com/v17.12/install/linux/docker-ce/ubuntu/#set-up-the-repository 
+#Make ubuntu user not use sudo when running docker commands:
+sudo usermod -a -G docker ubuntu
+...Then log out then connect again
