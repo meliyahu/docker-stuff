@@ -1,0 +1,11 @@
+version: '3'
+services:
+  server:
+    image: postgrest/postgrest
+    ports:
+      - "3000:3000"
+    environment:
+      PGRST_DB_URI: postgres://terndb:terndb@db-test.tern.org.au:5432/eem
+      PGRST_DB_SCHEMA: public
+      PGRST_DB_ANON_ROLE: terndb
+    restart: unless-stopped
